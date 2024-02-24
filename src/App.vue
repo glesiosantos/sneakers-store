@@ -1,32 +1,24 @@
 <script setup>
+import Header from './components/Header.vue'
+import CardList from './components/CardList.vue'
+// import Drawer from './components/Drawer.vue';
 </script>
 
 <template>
-   <div class="bg-white w-4/5 m-auto h-screen rounded-xl shadow-xl mt-14">
-    <header class="flex justify-between border-b border-slate-300 p-8">
-      <div class="flex items-center gap-4">
-        <img src="/logo.png" class="w-10"/>
-        <div>
-          <h2 class="text-xl font-bold uppercase">Sneack Store</h2>
-          <p class="text-slate-400 text-xs">Melhor tenes encontra-se aqui</p>
+   <!-- <Drawer/>  -->
+   <div class="bg-white w-full sm:w-4/5 m-auto rounded-xl shadow-xl sm:mt-14">
+      <Header/>
+      <div class="p-10">
+        <div class="flex flex-col gap-5 md:flex-row  justify-between items-center">
+          <h2 class="w-full text-3xl font-bold text-center md:text-justify lg:w-70">Conheça nossas ofertas</h2>
+          <div class="relative w-full lg:w-60">
+            <img src="./assets/icons/search.svg" class="absolute right-3 top-2.5" >
+            <input type="text" placeholder="Search ..." 
+              class="sm:w-full  border rounded-md py-1.5 pl-10 pr-4 outline-none focus:border-gray-400">
+          </div>
         </div>
-      </div>
-
-      <ul class="flex items-center gap-10">
-        <li class="flex items-center cursor-pointer gap-3 text-gray-500 hover:text-black">
-          <img src="/cart.svg" alt="">
-          <b>1205 py6.</b>
-        </li>
-        <li class="flex items-center cursor-pointer gap-3 text-gray-500 hover:text-black">
-          <img src="/heart.svg" alt="">
-          <span>favorite</span>
-        </li>
-        <li class="flex items-center cursor-pointer gap-3 text-gray-500 hover:text-black">
-          <img src="/profile.svg" alt="">
-          <span>profile</span>
-        </li>
-      </ul>
-    </header>
+        <CardList/>
+      </div>  
    </div>
 </template>
 
