@@ -2,8 +2,31 @@
 </script>
 
 <template>
-   <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+   <div class="bg-white w-4/5 m-auto h-screen rounded-xl shadow-xl mt-14">
+    <header class="flex justify-between border-b border-slate-300 p-8">
+      <div class="flex items-center gap-4">
+        <img src="/logo.png" class="w-10"/>
+        <div>
+          <h2 class="text-xl font-bold uppercase">Sneack Store</h2>
+          <p class="text-slate-400 text-xs">Melhor tenes encontra-se aqui</p>
+        </div>
+      </div>
+
+      <ul class="flex items-center gap-10">
+        <li class="flex items-center cursor-pointer gap-3 text-gray-500 hover:text-black">
+          <img src="/cart.svg" alt="">
+          <b>1205 py6.</b>
+        </li>
+        <li class="flex items-center cursor-pointer gap-3 text-gray-500 hover:text-black">
+          <img src="/heart.svg" alt="">
+          <span>favorite</span>
+        </li>
+        <li class="flex items-center cursor-pointer gap-3 text-gray-500 hover:text-black">
+          <img src="/profile.svg" alt="">
+          <span>profile</span>
+        </li>
+      </ul>
+    </header>
+   </div>
 </template>
 
