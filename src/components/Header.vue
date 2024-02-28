@@ -1,6 +1,6 @@
 <template>
-    <header class="flex justify-between border-b border-slate-200 p-8">
-      <div class="flex items-center gap-4">
+    <header class="flex justify-center border-b border-slate-200 py-8 px-5">
+      <div class="flex items-center w-full gap-3">
         <img src="/logo.png" class="w-10"/>
         <div>
           <h2 class="text-xl font-bold uppercase">Sneack Store</h2>
@@ -8,18 +8,18 @@
         </div>
       </div>
 
-      <ul class="flex items-center gap-10 ">
-        <li class="flex items-center cursor-pointer gap-2 text-gray-500 hover:text-black">
+      <ul class="flex items-center">
+        <li class="flex cursor-pointer text-gray-500 hover:text-black">
           <img src="/cart.svg" alt="">
-          <b>1205 py6.</b>
+          <b class="invisible md:visible">1205 py6.</b>
         </li>
-        <li class="flex items-center cursor-pointer gap-2 text-gray-500 hover:text-black">
+        <li class="flex cursor-pointer text-gray-500 hover:text-black">
           <img src="/heart.svg" alt="">
-          <span>favorite</span>
+          <span class="invisible md:visible">favorite</span>
         </li>
-        <li class="flex items-center cursor-pointer gap-2 text-gray-500 hover:text-black">
+        <li class="flex cursor-pointer text-gray-500 hover:text-black">
           <img src="/profile.svg" alt="">
-          <span>profile</span>
+          <span class="invisible md:visible">profile</span>
         </li>
       </ul>
     </header>
